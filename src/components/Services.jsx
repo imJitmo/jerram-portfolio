@@ -10,12 +10,12 @@ const services = [
   {
     name: 'UI/UX Design',
     description:
-      'As a UI UX designer I am a professional who identifies new opportunities to create better user experiences. Aesthetically pleasing branding strategies help them effectively reach more customers. They also ensure that the end-to-end journey with their products or services meets desired outcomes',
+      'As a UI UX designer I am a individual who identifies new opportunities to create better user experiences. Aesthetically pleasing branding strategies help clients effectively reach more customers. I also ensure that the end-to-end journey with my products or services meets desired outcomes',
     link: 'More...',
   },
   {
     name: 'Web Development',
-    description: `I amresponsible for planning and developing software solutions and web applications, supporting and maintaining a company's websites and digital products. The day-to-day work of the web developer highly depends on constantly evolving internet innovations`,
+    description: `I am responsible for planning and developing software solutions and web applications, supporting and maintaining a company's websites and digital products. I also handle the technical aspects of a website, including its performance and capacity innovations.`,
     link: 'More...',
   },
   {
