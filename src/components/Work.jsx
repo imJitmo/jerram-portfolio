@@ -24,8 +24,8 @@ export default function Work() {
               <h2 className="h2 leading-tight text-blue-400">My Latest Work.</h2>
               <p className="max-w-full mb-7">
                 I develop variety of different web applications both in front-end, back-end and full-stack. I
-                use different frameworks such as React.js, Vue.js for front-end, Express.js, Node.js for
-                Back-end. MERN for my full-stack.
+                use different frameworks such as React.js, Vue.js with Bootstrap CSS and Tailwind CSS for
+                front-end, Express.js, Node.js for Back-end. MERN for my full-stack.
               </p>
               <button className="text-white uppercase btn btn-sm hover:opacity-80">
                 <a href="https://github.com/imJitmo">View all projects</a>
