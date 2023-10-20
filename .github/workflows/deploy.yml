@@ -40,9 +40,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
-    env: VITE_EMAILJS_API_KEY: ${{vars.VITE_EMAILJS_API_KEY}}
-    VITE_EMAILJS_TEMPLATE_KEY: ${{vars.VITE_EMAILJS_}}
-    VITE_EMAILJS_PUBLIC_KEY: ${{vars.VITE_EMAILJS_PUBLIC_KEY}}
 
     steps:
       - name: Download artifact
