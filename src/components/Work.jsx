@@ -27,7 +27,9 @@ export default function Work() {
                 use different frameworks such as React.js, Vue.js for front-end, Express.js, Node.js for
                 Back-end. MERN for my full-stack.
               </p>
-              <button className="text-white uppercase btn btn-sm hover:opacity-80">View all projects</button>
+              <button className="text-white uppercase btn btn-sm hover:opacity-80">
+                <a href="https://github.com/imJitmo">View all projects</a>
+              </button>
             </div>
           </motion.div>
           {/* end text area */}
