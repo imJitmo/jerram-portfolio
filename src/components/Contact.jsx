@@ -1,4 +1,4 @@
-// motion
+//import motion
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../anim/variant.jsx';
