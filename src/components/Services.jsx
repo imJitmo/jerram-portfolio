@@ -3,26 +3,25 @@ import { BsArrowUpRight } from 'react-icons/bs';
 // motion
 import { motion } from 'framer-motion';
 // variants
+import { Link } from 'react-scroll';
 import { fadeIn } from '../anim/variant.jsx';
 //services data
 const services = [
   {
     name: 'UI/UX Design',
     description:
-      'lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip',
-    link: 'Learn More...',
+      'As a UI UX designer I am a professional who identifies new opportunities to create better user experiences. Aesthetically pleasing branding strategies help them effectively reach more customers. They also ensure that the end-to-end journey with their products or services meets desired outcomes',
+    link: 'More...',
   },
   {
     name: 'Web Development',
-    description:
-      'lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip',
-    link: 'Learn More...',
+    description: `I amresponsible for planning and developing software solutions and web applications, supporting and maintaining a company's websites and digital products. The day-to-day work of the web developer highly depends on constantly evolving internet innovations`,
+    link: 'More...',
   },
   {
     name: 'Product Branding',
-    description:
-      'lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip, lorem ipsum dolor sit amet, consectetur adip',
-    link: 'Learn More...',
+    description: `I use customer and trend research to create strategies that will change how people perceive the brand. I work to ensure that a brand remains recognisable, up to date and exciting to customers. Plan ways to promote – and change the public perception of – brands. `,
+    link: 'More...',
   },
 ];
 
@@ -43,7 +42,11 @@ export default function Services() {
               {' '}
               I am a Freelance Full-stack Developer with over 3 years of experience.
             </h3>
-            <button className="text-white uppercase btn btn-sm hover:opacity-80">Contact me</button>
+            <button className="text-white uppercase btn btn-sm">
+              <Link to="contact" smooth={true} spy={true}>
+                Contact me
+              </Link>
+            </button>
           </motion.div>
           <motion.div
             variants={fadeIn('right', 0.5)}
@@ -54,8 +57,8 @@ export default function Services() {
           >
             {services.map((service, index) => {
               return (
-                <div key={index} className="border-b border-white/20 h-[146px] mb-[38px] flex">
-                  <div className="max-w-[476px]">
+                <div key={index} className="border-b border-white/20 h-lg mb-7 flex">
+                  <div className="max-w-lg">
                     <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
                       {service.name}
                     </h4>
