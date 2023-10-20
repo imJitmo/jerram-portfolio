@@ -10,7 +10,7 @@ const services = [
   {
     name: 'UI/UX Design',
     description:
-      'As a UI UX designer I am a individual who identifies new opportunities to create better user experiences. Aesthetically pleasing branding strategies help clients effectively reach more customers. I also ensure that the end-to-end journey with my products or services meets desired outcomes',
+      'As a UI/UX designer I am an individual who identifies new opportunities to create better user experiences. Aesthetically pleasing branding strategies help clients effectively reach more customers. I also ensure that the end-to-end journey with my products or services meets desired outcomes',
     link: 'More...',
   },
   {
