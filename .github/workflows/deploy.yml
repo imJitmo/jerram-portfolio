@@ -4,15 +4,15 @@ on:
   push:
     branches:
       - main
-env:
-VITE_EMAILJS_API_KEY: true
-VITE_EMAILJS_TEMPLATE_KEY: true
-VITE_EMAILJS_PUBLIC_KEY: true
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    env:
+      VITE_EMAILJS_API_KEY: ${{secrets.VITE_EMAILJS_API_KEY}}
+      VITE_EMAILJS_TEMPLATE_KEY: ${{secrets.VITE_EMAILJS_}}
+      VITE_EMAILJS_PUBLIC_KEY: ${{secrets.VITE_EMAILJS_PUBLIC_KEY}}
 
     steps:
       - name: Checkout repo
