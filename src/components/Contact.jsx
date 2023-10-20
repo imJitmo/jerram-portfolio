@@ -29,7 +29,7 @@ export default function Contact() {
           Swal.fire({
             icon: 'success',
             title: 'Message Sent Successfully!',
-            text: 'We will get back to you soon!',
+            text: 'I will get back to you soon!',
             background: 'black',
             allowOutsideClick: false,
             showConfirmButton: true,
