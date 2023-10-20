@@ -42,7 +42,6 @@ export default function Contact() {
         }
       );
   };
-  console.log(state);
   return (
     <section id="contact" className="section">
       <div className="container mx-auto">
@@ -79,22 +78,34 @@ export default function Contact() {
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-blue-400 transition-all"
               type="text"
+              name="user_name"
+              id="user_name"
               placeholder="Your name"
+              required
             />
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-blue-400 transition-all"
               type="email"
+              name="user_email"
+              id="user_email"
               placeholder="Your email"
+              required
             />
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-blue-400 transition-all"
               type="tel"
+              name="user_number"
+              id="user_number"
               placeholder="Your contact number"
+              required
             />
             <textarea
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-blue-400 transition-all resize-none mb-12"
+              name="message"
+              id="message"
               placeholder="Your message"
-            ></textarea>
+              required
+            />
             <button type="submit" className="btn btn-lg" disabled={state === false}>
               {state ? 'Send Message' : 'Sending Message...'}
             </button>
