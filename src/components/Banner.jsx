@@ -62,11 +62,11 @@ export default function Banner() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="text-white uppercase btn btn-lg transition-all duration-500">
-                <Link to="contact" smooth={true} spy={true}>
+              <Link to="contact" smooth={true} spy={true}>
+                <button className="text-white uppercase btn btn-lg transition-all duration-500">
                   Contact me
-                </Link>
-              </button>
+                </button>
+              </Link>
               <a
                 href="https://github.com/imJitmo"
                 className="text-slate-50 font-semibold hover:text-blue-400"

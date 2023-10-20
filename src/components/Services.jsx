@@ -42,11 +42,9 @@ export default function Services() {
               {' '}
               I am a Freelance Full-stack Developer with over 3 years of experience.
             </h3>
-            <button className="text-white uppercase btn btn-sm">
-              <Link to="contact" smooth={true} spy={true}>
-                Contact me
-              </Link>
-            </button>
+            <Link to="contact" smooth={true} spy={true}>
+              <button className="text-white uppercase btn btn-sm">Contact me</button>
+            </Link>
           </motion.div>
           <motion.div
             variants={fadeIn('right', 0.5)}

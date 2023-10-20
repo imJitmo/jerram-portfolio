@@ -70,11 +70,11 @@ export default function About() {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="text-white uppercase btn btn-lg hover:opacity-80 transition-all duration-500">
-                <Link to="contact" smooth={true} spy={true}>
+              <Link to="contact" smooth={true} spy={true}>
+                <button className="text-white uppercase btn btn-lg hover:opacity-80 transition-all duration-500">
                   Contact me
-                </Link>
-              </button>
+                </button>
+              </Link>
               <a
                 href="https://github.com/imJitmo"
                 className="text-slate-50 font-semibold hover:text-blue-400"
