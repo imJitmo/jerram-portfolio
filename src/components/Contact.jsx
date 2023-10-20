@@ -2,8 +2,47 @@
 import { motion } from 'framer-motion';
 //variants
 import { fadeIn } from '../anim/variant.jsx';
+//swal
+import Swal from 'sweetalert2';
+//react
+import { useRef, useState } from 'react';
+//emailjs
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+  const form = useRef();
+  const [state, setState] = useState(true);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setState(false);
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_API_KEY,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_KEY,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          setState(true);
+          Swal.fire({
+            icon: 'success',
+            title: 'Message Sent Successfully!',
+            text: 'We will get back to you soon!',
+            background: 'black',
+            allowOutsideClick: false,
+            showConfirmButton: true,
+            confirmButtonColor: '#04138f',
+          });
+          return;
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  console.log(state);
   return (
     <section id="contact" className="section">
       <div className="container mx-auto">
@@ -27,6 +66,9 @@ export default function Contact() {
           </motion.div>
           {/* form */}
           <motion.form
+            form
+            ref={form}
+            onSubmit={sendEmail}
             variants={fadeIn('left', 0.5)}
             initial="hidden"
             whileInView={'show'}
@@ -53,7 +95,9 @@ export default function Contact() {
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-blue-400 transition-all resize-none mb-12"
               placeholder="Your message"
             ></textarea>
-            <button className="btn btn-lg">Send Message</button>
+            <button type="submit" className="btn btn-lg" disabled={state === false}>
+              {state ? 'Send Message' : 'Sending Message...'}
+            </button>
           </motion.form>
         </div>
       </div>
