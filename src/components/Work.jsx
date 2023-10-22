@@ -53,7 +53,7 @@ export default function Work() {
                   </span>
                 </div>
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                  <span className="text-3xl text-white ">J.re Properties</span>
+                  <span className="text-3xl text-white ">Real Estate App</span>
                 </div>
               </a>
             </div>
