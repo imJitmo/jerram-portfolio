@@ -43,7 +43,7 @@ export default function Contact() {
       );
   };
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section mb-36">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/** text **/}
