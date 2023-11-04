@@ -44,7 +44,7 @@ export default function Work() {
             className="mb-10"
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <a href="https://pangilinan-capstone-3.onrender.com/" target="_blank" rel="noreferrer">
+              <a href="https://mern-reale-estate-app.onrender.com/" target="_blank" rel="noreferrer">
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                 <img className="group-hover:scale-125 transition-all duration-500" src={Img1} alt="image" />
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
