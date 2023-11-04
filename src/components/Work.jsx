@@ -49,7 +49,7 @@ export default function Work() {
                 <img className="group-hover:scale-125 transition-all duration-500" src={Img1} alt="image" />
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                   <span className="text-white font-semibold uppercase">
-                    Full-stack <span className="text-blue-400 font-bold">Web App</span>
+                    MERN Stack <span className="text-blue-400 font-bold">Web App</span>
                   </span>
                 </div>
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
@@ -68,18 +68,20 @@ export default function Work() {
             className="mb-10"
           >
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-              <img className="group-hover:scale-125 transition-all duration-500" src={Img2} alt="image" />
-              <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-white font-semibold uppercase">
-                  N/A <span className="text-blue-400 font-bold">-</span>
-                </span>
-              </div>
+              <a href="https://react-sharies-app.onrender.com/" target="_blank" rel="noreferrer">
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                <img className="group-hover:scale-125 transition-all duration-500" src={Img2} alt="image" />
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-white font-semibold uppercase">
+                    MERN Stack Web App <span className="text-blue-400 font-bold">-</span>
+                  </span>
+                </div>
 
-              {/** */}
-              <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3xl text-white "> - </span>
-              </div>
+                {/** */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span className="text-3xl text-white "> Sharies - A Thread Clone </span>
+                </div>
+              </a>
             </div>
           </motion.div>
           {/** end Image 2 **/}
