@@ -73,7 +73,7 @@ export default function Work() {
                 <img className="group-hover:scale-125 transition-all duration-500" src={Img2} alt="image" />
                 <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
                   <span className="text-white font-semibold uppercase">
-                    MERN Stack Web App <span className="text-blue-400 font-bold">-</span>
+                    MERN Stack <span className="text-blue-400 font-bold">Web App </span>
                   </span>
                 </div>
 
